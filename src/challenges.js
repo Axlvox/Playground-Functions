@@ -1,19 +1,19 @@
 // Desafio 1 - Crie a função compareTrue
 // const girafa = true;
-// const elefante = true;
-// const macaco = false;
+const elefante = true;
+const macaco = false;
 
-//   function compareTrue(animal1, animal2) {
-//   if (animal1 === true && animal2=== true) {
-//     return true
-//   } else { (animal1 && animal2 !== true)
-//     return false
-//   }
-//   }
+  function compareTrue(animal1, animal2) {
+  if (animal1 === true && animal2=== true) {
+    return true
+  } else { (animal1 && animal2 !== true)
+    return false
+  }
+  }
  
 
-//  console.log(compareTrue(girafa, elefante));
-//  console.log(compareTrue (macaco, elefante));
+ console.log(compareTrue(girafa, elefante));
+ console.log(compareTrue (macaco, elefante));
   
 
 // Desafio 2 - Crie a função splitSentence
