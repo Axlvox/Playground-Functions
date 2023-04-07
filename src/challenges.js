@@ -1,5 +1,5 @@
 // Desafio 1 - Crie a função compareTrue
-// const girafa = true;
+const girafa = true;
 const elefante = true;
 const macaco = false;
 
@@ -10,7 +10,6 @@ const macaco = false;
     return false
   }
   }
- 
 
  console.log(compareTrue(girafa, elefante));
  console.log(compareTrue (macaco, elefante));
