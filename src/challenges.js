@@ -13,7 +13,6 @@ const macaco = false;
 
  console.log(compareTrue(girafa, elefante));
  console.log(compareTrue (macaco, elefante));
-  
 
 // Desafio 2 - Crie a função splitSentence
   function splitSentence(frase) {
@@ -29,10 +28,21 @@ const macaco = false;
   const resultadoFrase = splitSentence;
   console.log(resultadoFrase);
 
-
-//  console.log(splitSentence('go Trybe'));
-
 // Desafio 3 - Crie a função concatName
+let names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+let lema = ['foguete', 'não', 'tem', 'ré'];
+let capitão = ['captain', 'my', 'captain'];
+
+function concatName(arrays) {
+  let primeiro = arrays[0];
+  let ultimo = arrays[arrays.length - 1];
+  return ultimo + ', ' + primeiro; 
+  }
+
+
+console.log(concatName(names));
+console.log(concatName(lema));
+console.log(concatName(capitão));
 
 // Desafio 4 - Crie a função footballPoints
 
