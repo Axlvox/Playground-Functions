@@ -45,6 +45,13 @@ console.log(concatName(lema));
 console.log(concatName(capitão));
 
 // Desafio 4 - Crie a função footballPoints
+function footballPoints(wins, ties) {
+  return 3 * wins + 1 * ties;
+}
+  
+  console.log(footballPoints(14, 8));
+  console.log(footballPoints(1, 2));
+  console.log(footballPoints(0, 0));
 
 // Desafio 5 - Crie a função highestCount
 
