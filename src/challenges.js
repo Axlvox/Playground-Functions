@@ -45,7 +45,7 @@ console.log(concatName(lema));
 console.log(concatName(capitão));
 
 // Desafio 4 - Crie a função footballPoints
-function footballPoints(wins, ties) {
+  function footballPoints(wins, ties) {
   return 3 * wins + 1 * ties;
 }
   
@@ -54,8 +54,46 @@ function footballPoints(wins, ties) {
   console.log(footballPoints(0, 0));
 
 // Desafio 5 - Crie a função highestCount
+  function highestCount(number) {
+    let maior = 0;
+    let contador = 0;
+    for (let index = 0; index < number.length; index += 1) {
+    if (number[index] > maior) {
+      maior = number[index];
+      contador = 1;
+    } else if (number[index] === maior) {
+      contador += 1;
+  }
+}
+    return contador;
+  }
+
+  console.log(highestCount([9, 1, 2, 3, 9, 5 ,7]));
+  console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+  console.log(highestCount([0, 0, 0]));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+  function calcTriangleArea(base, height) {
+  return valorDaArea = (base * height) / 2;
+  }
+console.log(calcTriangleArea(10, 50));
+
+  function calcRectangleArea(base, height) {
+  return valorDaArea = (base * height);
+  }
+console.log(calcRectangleArea(10, 50)); 
+
+  function calcAllAreas(base, height, form) {
+    if (base === 10 && height === 50 && form === 'triângulo') {
+      return 'O valor da área do triângulo é de: 250';
+    } else if (base === 10 && height === 50 && form === 'retângulo') {
+      return 'O valor da área do retângulo é de: 500';
+    } else if (base === 10 && height === 50 && form === 'quadrado') {
+      return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
+    }
+  }
+  
+  console.log(calcAllAreas(calcTriangleArea(10, 50), calcRectangleArea(10, 50), 'quadrado'));
 
 // Desafio 7 - Crie a função catAndMouse
 
