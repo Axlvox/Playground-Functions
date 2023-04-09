@@ -111,8 +111,27 @@ console.log(calcRectangleArea(10, 50));
   console.log(catAndMouse(5, 8, 7));
   console.log(catAndMouse(5, 11, 17));
   console.log(catAndMouse(5, 3, 7));
-// Desafio 8 - Crie a função fizzBuzz
 
+// Desafio 8 - Crie a função fizzBuzz
+    function fizzBuzz(num) {
+      let resultado = []
+      for (let index in num) {
+        if (num[index] % 3 === 0 && num[index] % 5 === 0) {
+          resultado.push('fizzBuzz');
+        } else if (num[index] % 5 === 0) {
+          resultado.push('buzz');
+        } else if (num[index] % 3 === 0) {
+          resultado.push('fizz');
+        } else {
+          resultado.push('bug!');
+      }
+    }
+    return resultado;
+  }
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+console.log(fizzBuzz([7, 9]));
+console.log(fizzBuzz([9, 25]));
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
