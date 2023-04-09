@@ -33,7 +33,7 @@ let names = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 let lema = ['foguete', 'não', 'tem', 'ré'];
 let capitão = ['captain', 'my', 'captain'];
 
-function concatName(arrays) {
+  function concatName(arrays) {
   let primeiro = arrays[0];
   let ultimo = arrays[arrays.length - 1];
   return ultimo + ', ' + primeiro; 
@@ -133,7 +133,50 @@ console.log(fizzBuzz([2, 15, 7, 9, 45]));
 console.log(fizzBuzz([7, 9]));
 console.log(fizzBuzz([9, 25]));
 // Desafio 9 - Crie a função encode e a função decode
+  function encode(string) {
+    let cript= [];
+    for (let index in string) {
+      if (string[index] === 'a') {
+      cript.push('1');
+    } else if (string[index] === 'e') {
+      cript.push('2');
+    } else if (string[index] === 'i') {
+      cript.push('3');
+    } else if (string[index] === 'o') {
+      cript.push('4');
+    } else if (string[index] === 'u') {
+      cript.push('5');
+   } else {
+    cript.push(string[index]);
+  }
+}
+  return cript.join('');
+}
 
+  function decode(cript) {
+  let decifra= [];
+  for (let index in cript) {
+    if (cript[index] === '1') {
+    decifra.push('a');
+  } else if (cript[index] === '2') {
+    decifra.push('e');
+  } else if (cript[index] === '3') {
+    decifra.push('i');
+  } else if (cript[index] === '4') {
+    decifra.push('o');
+  } else if (cript[index] === '5') {
+    decifra.push('u');
+  } else {
+    decifra.push(cript[index]);
+  }
+}
+  return decifra.join('');
+}
+
+console.log(encode('hello'));
+console.log(encode('How are you today?'));
+console.log(encode('This is an encoding test.'));
+console.log(encode('go Trybe!'));
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
